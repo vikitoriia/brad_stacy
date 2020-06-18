@@ -2,70 +2,89 @@
   background: url("../img/bg-intro.svg") no-repeat 50%;
   background: #E5E5E5;;
   padding: 48px 0 0;
+  height: 100vh;
+  position: relative;
 
-    .bs-title{
-      color: #0E1735;
-      font-family: 'Archivo Black';
+  .bs-title{
+    color: #0E1735;
+    font-family: 'Archivo Black';
+    font-weight: 500;
+    font-size: 56px;
+
+  }
+
+  .bs-subtitle{
+    font-family: 'Roboto';
+    color: #0E1735;
+    width: 410px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    margin-top: 30px;
+  }
+
+  .bs-contact{
+    margin-top: 30px;
+    margin-bottom: 287px;
+
+    .bs-button__contact{
       font-weight: 500;
-      font-size: 56px;
-
-    }
-
-    .bs-subtitle{
-      font-family: 'Roboto';
-      color: #0E1735;
-      width: 410px;
-      font-weight: 500;
-      font-size: 20px;
-      letter-spacing: 0.02em;
-      margin-top: 30px;
-    }
-
-    .bs-contact{
-      margin-top: 30px;
-      margin-bottom: 287px;
-
-      .bs-button__contact{
-        font-weight: 500;
-      }
-    }
-
-    button + button{
-      margin-left: 12px;
-    }
-
-  .slider{
-    position: relative;
-    z-index: 1;
-
-    .slick-dots{
-      list-style: none;
-      display: flex;
-      position: absolute;
-      z-index: 100;
-      //transform: translateX(10px) translateY(-50px);
-
-      li{
-        font-family: Archivo;
-        font-weight: bold;
-        font-size: 16px;
-        color: white;
-        opacity: 0.5;
-
-        &:hover{
-          color: white;
-          opacity: 1;
-        }
-      }
-
-      li .active{
-        opacity: 1;
-      }
-
-      li + li{
-        margin-left: 20px;
-      }
     }
   }
 
+  button + button{
+    margin-left: 12px;
+  }
+
+  .bs-slide-post{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    overflow: hidden;
+
+    .slider{
+      margin: 0;
+
+      .bs-slide{
+        overflow: hidden;
+
+        img{
+          width: 100%;
+          display: block;
+          overflow: hidden;
+        }
+      }
+
+      .slick-dots{
+        list-style: none;
+        display: flex;
+        position: absolute;
+        z-index: 100;
+        //transform: translateX(10px) translateY(-50px);
+
+        li{
+          font-family: Archivo;
+          font-weight: bold;
+          font-size: 16px;
+          color: white;
+          opacity: 0.5;
+
+          &:hover{
+            color: white;
+            opacity: 1;
+          }
+        }
+
+        li .active{
+          opacity: 1;
+        }
+
+        li + li{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 }

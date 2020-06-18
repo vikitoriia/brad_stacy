@@ -21,13 +21,14 @@ $('.slider').slick({
     arrows: false,
     infinite: true,
     autoplay: true,
-    speed: 1000,
+    speed: 2000,
+    autoplaySpeed: 4000,
     fade: true,
     cssEase: 'linear',
-    dots: true,
-    customPaging: function(slider, i) {
-        return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
-    },
+    // dots: true,
+    // customPaging: function(slider, i) {
+    //     return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
+    // },
 });
 
 $('.slider-customers').slick({
