@@ -1,0 +1,38 @@
+.bs-section-about{
+  padding: 85px 0;
+  background: #fff;
+
+  .bs-title{
+    color: #0E1735;
+    font-weight: normal;
+    font-size: 42px;
+    font-family: Archivo Black;
+  }
+
+  .bs-subtitle{
+    font-family: 'Roboto';
+    color: #0E1735;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 36px;
+    margin-bottom: 48px;
+
+    div + div {
+      margin-top: 36px;
+    }
+  }
+
+  .bs-gallery{
+    display: flex;
+
+    img + img{
+      margin-left: 30px;
+    }
+  }
+
+  .bs-gallery__second{
+    margin-top: 30px;
+    transform: translateX(105px);
+  }
+}

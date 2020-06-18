@@ -1,0 +1,30 @@
+<header class="ba-header-wrap">
+    <div class="bs-header">
+        <div class="row align-middle bs-header__view">
+            <div class="column large-2">
+                <a href="/">
+                    <img src="{{root}}assets/img/logo.svg" alt="Brad Stacy">
+                </a>
+            </div>
+            <!-- /.column -->
+            <div class="column large-5">
+                <button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
+                        </button>
+                <ul class="menu bs-main-menu show-for-medium">
+                    <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="index.html">Home</a></li>
+                    <li {{#ifpage 'about'}} class="active" {{/ifpage}}><a href="#about">About</a></li>
+                    <li {{#ifpage 'services'}} class="active" {{/ifpage}}><a href="#services">Services</a></li>
+                    <li {{#ifpage 'process'}} class="active" {{/ifpage}}><a href="#process">Process</a></li>
+                    <li {{#ifpage 'models'}} class="active" {{/ifpage}}><a href="#models">Models</a></li>
+                </ul>
+            </div>
+            <!-- /.column -->
+            <div class="column large-2">
+                <button class="bs-button bs-button__contact">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</header>

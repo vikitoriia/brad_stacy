@@ -1,0 +1,88 @@
+.bs-footer{
+  padding: 40px 0 60px;
+  background: #0E1735;
+
+  .bs-info{
+    h4{
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    a{
+      p{
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+    }
+      p{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 1;
+        transition: opacity 1s;
+      }
+  }
+
+  .bs-phone-number{
+    display: flex;
+    &::before{
+      content: "";
+      display: block;
+      background: url("../img/phone-icon.svg");
+      width: 26px;
+      height: 35px;
+      margin-right: 25px;
+      margin-top: 10px;
+    }
+
+    .bs-number{
+      font-size: 26px;
+    }
+  }
+
+  .bs-mail{
+    display: flex;
+    &::before{
+      content: "";
+      display: inline-block;
+      background: url("../img/mail-icon.svg");
+      width: 35px;
+      height: 35px;
+      margin-right: 25px;
+      margin-top: 10px;
+    }
+  }
+
+  .bs-location{
+    display: flex;
+    &::before{
+      content: "";
+      display: inline-block;
+      background: url("../img/map-icon.svg");
+      width: 26px;
+      height: 35px;
+      margin-right: 25px;
+      margin-top: 10px;
+    }
+  }
+
+  .bs-hours{
+    display: flex;
+    &::before{
+      content: "";
+      display: inline-block;
+      background: url("../img/clock-icon.svg");
+      width: 34px;
+      height: 34px;
+      margin-right: 25px;
+      margin-top: 10px;
+    }
+  }
+}

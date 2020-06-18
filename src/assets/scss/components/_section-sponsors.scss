@@ -1,0 +1,35 @@
+.bs-section-sponsors{
+  padding: 110px 0 85px;
+  background: #fff;
+
+
+  .bs-post {
+    display: flex;
+    width: 100%;
+    animation: marquee 40s infinite linear;
+
+    @keyframes marquee{
+      0%{transform: translate(0, 0);}
+      100%{transform: translate(-100%, 0)}
+    }
+
+    .bs-company{
+      min-width: 120px;
+      height: 120px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 24px rgba(62, 71, 86, 0.15);
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+
+    }
+
+  }
+
+  .bs-company + .bs-company{
+    margin-left: 90px;
+  }
+}

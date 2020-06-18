@@ -1,0 +1,75 @@
+.bs-section-costumers{
+  padding: 60px 0 85px;
+  background: #fff;
+
+  .bs-title{
+    font-family: 'Archivo Black';
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 1;
+    color: #0E1735;
+    margin-top: 65px;
+  }
+
+  .bs-slider-nav{
+    margin-top: 136px;
+
+    svg + svg{
+      margin-left: 50px;
+    }
+  }
+
+  .slider-customers{
+    height: 100%;
+    width: 1000px;
+
+    .slide__1{
+      background: url("../img/slide-customer-1.svg");
+    }
+
+    .slide__2{
+      background: url("../img/slide-customer-2.svg");
+    }
+
+    .slide{
+      max-width: 380px !important;
+      height: 414px;
+      border-radius: 16px;
+      padding: 35px 36px 50px;
+      box-shadow: 0 4px 14px rgba(62, 71, 86, 0.2);
+      margin: 10px;
+
+      .bs-review{
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #3E4756;
+      }
+
+      .bs-person{
+        display: flex;
+        align-items: center;
+        margin-top: 120px;
+
+        .bs-person__info{
+          .bs-name{
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 18px;
+            color: #0E1735;
+            margin: 0;
+          }
+
+          .bs-company{
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 15px;
+            color: #8B919A;
+          }
+        }
+      }
+    }
+  }
+}

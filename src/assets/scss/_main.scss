@@ -1,0 +1,63 @@
+a, button{
+    transition: .3s ease-in;
+    transition-property: color, background-color, opacity;
+    svg{
+        fill:currentColor;
+    }
+}
+button, .button{
+    cursor: pointer;
+}
+
+.bs-button{
+    font-family: 'Roboto';
+    padding: 12px 32px;
+    background: #1A98F7;
+    border-radius: 36px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    border: 1px solid #1A98F7;
+    transition: 1;
+
+    &:hover{
+        color: #1A98F7;
+        background: #FFFFFF;
+        border: 1px solid #1A98F7;
+        border-radius: 36px;
+    }
+}
+
+.bs-button__light{
+    font-family: 'Roboto';
+    padding: 12px 32px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #1A98F7;
+    background: #FFFFFF;
+    border: 1px solid #1A98F7;
+    border-radius: 36px;
+    transition: 1s;
+
+    &:hover{
+        background: #1A98F7;
+        border-radius: 36px;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
+}

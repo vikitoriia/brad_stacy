@@ -1,0 +1,24 @@
+.bs-section-gallery{
+  padding: 90px 0 60px;
+  background: #fff;
+
+  .gallery{
+    display: flex;
+    justify-content: center;
+
+    .bs-gallery-column{
+      img{
+        margin-bottom: 6px;
+        transition: opacity 2s;
+
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+    }
+
+    .bs-gallery-column + .bs-gallery-column{
+      margin-left: 6px;
+    }
+  }
+}
