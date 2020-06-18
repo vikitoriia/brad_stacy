@@ -2,23 +2,39 @@
   padding: 90px 0 60px;
   background: #fff;
 
-  .gallery{
-    display: flex;
-    justify-content: center;
+  .bs-container{
+    width: 100%;
 
-    .bs-gallery-column{
-      img{
-        margin-bottom: 6px;
-        transition: opacity 2s;
+    .gallery{
+      display: flex;
+      justify-content: center;
 
-        &:hover{
-          opacity: 0.6;
+      .bs-gallery-column{
+        width: 100%;
+
+        a{
+          display: block;
+          margin: 3px;
+        }
+
+        div{
+          width: 100%;
+          display: flex;
+
+          a{
+            width: 50%;
+          }
+        }
+
+        img{
+          width: 100%;
+          transition: opacity 2s;
+
+          &:hover{
+            opacity: 0.6;
+          }
         }
       }
-    }
-
-    .bs-gallery-column + .bs-gallery-column{
-      margin-left: 6px;
     }
   }
 }

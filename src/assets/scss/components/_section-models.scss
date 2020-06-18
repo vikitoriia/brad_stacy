@@ -1,0 +1,105 @@
+.bs-section-models{
+  padding: 0 0 52px;
+  background: #0E1735;
+
+  .bs-car-gallery{
+    display: flex;
+    width: 100%;
+
+    .bs-car-post {
+      display: block;
+      width: 33.33%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+      position: relative;
+
+      .bs-car--img {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+          img {
+            transform: scale(1.2)
+          }
+        }
+
+        img {
+          width: 100%;
+          transition: transform 0.3s;
+        }
+      }
+
+      .bs-info {
+        position: absolute;
+        display: block;
+        left: 38px;
+        bottom: 30px;
+
+
+        .bs-name {
+          font-family: 'Archivo Black';
+          font-weight: normal;
+          font-size: 32px;
+          color: #FFFFFF;
+
+          h3 {
+            text-align: left;
+            position: absolute;
+            left: 0;
+            bottom: 15px;
+          }
+        }
+
+        .bs-location {
+          display: flex;
+          align-items: center;
+          .bs-country {
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+
+            &:before {
+              content: "";
+              width: 12px;
+              height: 16px;
+              background: url("../img/map-marker-icon.svg");
+              display: inline-block;
+              margin-right: 14px;
+            }
+          }
+
+          .bs-number {
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+
+            &:before {
+              content: "";
+              width: 15px;
+              height: 12px;
+              background: url("../img/car-icon.svg");
+              display: inline-block;
+              margin-right: 14px;
+            }
+          }
+
+          .bs-country + .bs-number {
+            margin-left: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .bs-button__all-models{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -12599,7 +12599,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider').slick({
   }
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-customers').slick({
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   infinite: true,
   speed: 1000,

@@ -1,5 +1,5 @@
 .bs-section-service{
-  padding: 0 0 52px;
+  padding: 0;
   background: #0E1735;
 
   .bs-container{
@@ -7,18 +7,25 @@
 
     .bs-about{
       display: flex;
-      justify-content: center;
 
-      .bs-service{
+      .bs-img{
+        width: 50%;
+
+        img{
+          display: block;
+          width: 100%;
+        }
+      }
+      .bs-service {
         margin-left: 70px;
         width: 650px;
 
-        .bs-title{
+        .bs-title {
           width: 413px;
           margin-top: 50px;
           margin-bottom: 46px;
 
-          h2{
+          h2 {
             font-family: 'Archivo Black';
             font-weight: normal;
             font-size: 42px;
@@ -26,13 +33,14 @@
           }
         }
 
-        .bs-expert-service{
+        .bs-expert-service {
           margin-bottom: 60px;
-          li+li{
+
+          li + li {
             margin-top: 20px;
           }
 
-          li{
+          li {
             font-family: 'Roboto';
             font-weight: normal;
             font-size: 16px;
@@ -42,112 +50,14 @@
           }
         }
 
-        .bs-button__more{
+        .bs-button__more {
           background: #0E1735;
 
-          &:hover{
+          &:hover {
             color: #fff;
             background: #00C0FE;
           }
         }
-      }
-    }
-
-    .bs-car-gallery{
-      div{
-        display: flex;
-        position: relative;
-        justify-content: center;
-
-        .bs-car-post{
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-
-          .bs-car--img{
-            display: block;
-            overflow: hidden;
-            cursor: pointer;
-
-            &:hover{
-              img{
-                transform: scale(1.2)
-              }
-            }
-
-            img{
-              display: block;
-              width: 100%;
-              transition: transform 0.3s;
-            }
-          }
-
-          .bs-info{
-            position: absolute;
-            display: block;
-            left: 38px;
-            justify-content: left;
-            bottom: 30px;
-
-            .bs-name{
-              font-family: 'Archivo Black';
-              font-weight: normal;
-              font-size: 32px;
-              color: #FFFFFF;
-
-              h3{
-                text-align: left;
-                position: absolute;
-                left: 0;
-                bottom: 15px;
-              }
-            }
-
-            .bs-location{
-              .bs-country{
-                font-family: 'Roboto';
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1;
-                letter-spacing: 0.02em;
-                color: #FFFFFF;
-
-                &:before{
-                  content: "";
-                  width: 12px;
-                  height: 16px;
-                  background: url("../img/map-marker-icon.svg");
-                  display: block;
-                  margin-right: 14px;
-                }
-              }
-
-              .bs-number{
-                font-family: 'Roboto';
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1;
-                letter-spacing: 0.02em;
-                color: #FFFFFF;
-
-                &:before{
-                  content: "";
-                  width: 15px;
-                  height: 12px;
-                  background: url("../img/car-icon.svg");
-                  display: block;
-                  margin-right: 14px;
-                }
-              }
-
-              .bs-country + .bs-number{
-                margin-left: 28px;
-              }
-            }
-          }
-        }
-      }
-
-      .bs-button__all-models{
-        margin-top: 40px;
       }
     }
   }

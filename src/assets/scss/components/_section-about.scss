@@ -1,6 +1,7 @@
 .bs-section-about{
   padding: 85px 0;
   background: #fff;
+  position: relative;
 
   .bs-title{
     color: #0E1735;
@@ -24,15 +25,21 @@
   }
 
   .bs-gallery{
-    display: flex;
+    position: absolute;
+    top: 85px;
+    right: 0;
 
-    img + img{
-      margin-left: 30px;
+    .bs-gallery__line{
+      display: flex;
+
+      img + img{
+        margin-left: 30px;
+      }
     }
-  }
 
-  .bs-gallery__second{
-    margin-top: 30px;
-    transform: translateX(105px);
+    .bs-gallery__line-second{
+      margin-top: 30px;
+      transform: translateX(105px);
+    }
   }
 }
