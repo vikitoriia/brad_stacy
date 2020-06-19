@@ -17,6 +17,26 @@ import './lib/slick.min.js';
 
 $(document).foundation();
 
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".bs-header").style.top = "0";
+    } else {
+        document.querySelector(".bs-header").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+};
+
+
+
+$(".bs-main-menu").on("click", function(e){
+    $("li.bs-menu-links").removeClass("active");
+    $(this).addClass("active");
+});
+
+
+
 $('.slider').slick({
     arrows: false,
     infinite: true,
@@ -25,10 +45,10 @@ $('.slider').slick({
     autoplaySpeed: 4000,
     fade: true,
     cssEase: 'linear',
-    // dots: true,
-    // customPaging: function(slider, i) {
-    //     return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
-    // },
+    dots: true,
+    customPaging: function(slider, i) {
+        return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
+    },
 });
 
 $('.slider-customers').slick({
