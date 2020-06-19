@@ -30,9 +30,22 @@ window.onscroll = function() {
 
 
 
-$(".bs-main-menu").on("click", function(e){
-    $("li.bs-menu-links").removeClass("active");
-    $(this).addClass("active");
+$(document).ready(function(){
+
+    $('.myWrapper').easyTicker({
+        direction: 'up',
+        easing: 'swing',
+        speed: 'slow',
+        interval: 2000,
+        height: 'auto',
+        visible: 0,
+        mousePause: true,
+        callbacks: {
+            before: false,
+            after: false
+        }
+    });
+
 });
 
 
@@ -46,9 +59,10 @@ $('.slider').slick({
     fade: true,
     cssEase: 'linear',
     dots: true,
-    customPaging: function(slider, i) {
-        return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
-    },
+    dotsData: true,
+    // customPaging: function(slider, i) {
+    //     return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
+    // },
 });
 
 $('.slider-customers').slick({

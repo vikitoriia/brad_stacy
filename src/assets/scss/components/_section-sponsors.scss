@@ -1,7 +1,5 @@
 .bs-section-sponsors{
   padding: 110px 0 85px;
-  background: #fff;
-
 
   .bs-post {
     display: flex;
@@ -10,7 +8,7 @@
 
     @keyframes marquee{
       0%{transform: translate(0, 0);}
-      100%{transform: translate(-100%, 0)}
+      100%{transform: translate(-100%, 0);}
     }
 
     .bs-company{

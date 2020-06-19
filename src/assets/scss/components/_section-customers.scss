@@ -1,13 +1,11 @@
 .bs-section-costumers{
   padding: 60px 0 85px;
-  background: #fff;
 
   .bs-title{
     font-family: 'Archivo Black';
     font-weight: normal;
     font-size: 42px;
     line-height: 1;
-    color: #0E1735;
     margin-top: 65px;
   }
 
@@ -36,8 +34,8 @@
       height: 414px;
       border-radius: 16px;
       padding: 35px 36px 50px;
-      box-shadow: 0 4px 14px rgba(62, 71, 86, 0.2);
-      margin: 10px;
+      box-shadow: 0px 4px 24px rgba(62, 71, 86, 0.15);
+      margin: 20px;
 
       .bs-review{
         font-family: Roboto;
@@ -58,7 +56,6 @@
             font-family: Roboto;
             font-weight: 500;
             font-size: 18px;
-            color: #0E1735;
             margin: 0;
           }
 

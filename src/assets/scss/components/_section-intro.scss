@@ -1,12 +1,10 @@
 .bs-section-intro{
-  background: url("../img/bg-intro.svg") no-repeat 50%;
-  background: #E5E5E5;;
+  background: #E5E5E5 url("../img/intro-bg1.jpg") no-repeat 50%;
   padding: 128px 0 0;
   height: 100vh;
   position: relative;
 
   .bs-title{
-    color: #0E1735;
     font-family: 'Archivo Black';
     font-weight: 500;
     font-size: 56px;
@@ -15,7 +13,6 @@
 
   .bs-subtitle{
     font-family: 'Roboto';
-    color: #0E1735;
     width: 410px;
     font-weight: 500;
     font-size: 20px;
@@ -62,7 +59,6 @@
         display: flex;
         position: absolute;
         z-index: 100;
-        //transform: translateX(10px) translateY(-50px);
 
         li{
           font-family: Archivo;

@@ -12600,9 +12600,20 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".bs-main-menu").on("click", function (e) {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()("li.bs-menu-links").removeClass("active");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass("active");
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.myWrapper').easyTicker({
+    direction: 'up',
+    easing: 'swing',
+    speed: 'slow',
+    interval: 2000,
+    height: 'auto',
+    visible: 0,
+    mousePause: true,
+    callbacks: {
+      before: false,
+      after: false
+    }
+  });
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider').slick({
   arrows: false,
@@ -12613,9 +12624,10 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider').slick({
   fade: true,
   cssEase: 'linear',
   dots: true,
-  customPaging: function customPaging(slider, i) {
-    return '<button class="tab">' + jquery__WEBPACK_IMPORTED_MODULE_0___default()(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
-  }
+  dotsData: true // customPaging: function(slider, i) {
+  //     return '<button class="tab">' + $(slider.$slides[i]).attr('title') + '<i class="fa fa-sort-asc"></i></button>';
+  // },
+
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-customers').slick({
   slidesToShow: 4,
